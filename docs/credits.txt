@@ -1,0 +1,9 @@
+Project on Github: https://github.com/nmpetkov/Sitemap
+
+Conversion to Zikula 1.3 and ver. 2.0 - Nikolay Petkov https://github.com/nmpetkov
+
+Main module author - Christophe Beaujean aka Yokav (http://www.yokav.info)
+
+Inspired by sesitemap module - Mark West (http://www.markwest.me.uk)
+
+SlickMap css author - Astuteo (http://astuteo.com/slickmap/)

@@ -1,0 +1,19 @@
+{
+    "name": "nmpetkov/Sitemap",
+    "description": "Provide both XML SEO and user friendly sitemap for the site.",
+    "type": "zikula-module",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Zikula development team",
+            "homepage": "http://zikula.org"
+        }
+        {
+            "name": "Nikolay Petkov",
+            "homepage": "http://www.cmstory.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    }
+}

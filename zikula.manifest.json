@@ -1,0 +1,21 @@
+{
+    "extension": {
+        "title": "Sitemap for Zikula",
+        "url": "https://github.com/nmpetkov/Sitemap",
+        "icon": "http://www.cmstory.com/images/github/sitemap.png"
+    },
+    "version": {
+        "keywords": [
+            "sitemap"
+        ],
+        "semver": "2.0.0",
+        "dependencies": {
+            "zikula/core": ">1.3.0 <1.5"
+        },
+        "composerpath": "composer.json",
+        "description": "Provide both XML SEO and user friendly sitemap for the site.",
+        "urls": {
+            "issues": "https://github.com/nmpetkov/Sitemap/issues"
+        }
+    }
+}

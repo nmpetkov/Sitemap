@@ -1,0 +1,396 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-26 12:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/Sitemap/Version.php:10
+msgid "Site map"
+msgstr ""
+
+#. !module name that appears in URL
+#: lib/Sitemap/Version.php:11
+msgid "sitemap"
+msgstr ""
+
+#: lib/Sitemap/Version.php:12
+msgid ""
+"Generate a xml sitemap for the search engines and another one for the users."
+msgstr ""
+
+#: lib/Sitemap/Api/User.php:125
+msgid "Backend"
+msgstr ""
+
+#: lib/Sitemap/Api/Admin.php:13
+msgid "Overview"
+msgstr ""
+
+#: lib/Sitemap/Api/Admin.php:16
+msgid "Frontend"
+msgstr ""
+
+#: lib/Sitemap/Api/Admin.php:19 templates/sitemap_admin_contentdisplay.tpl:6
+msgid "Content to display"
+msgstr ""
+
+#: lib/Sitemap/Api/Admin.php:22
+msgid "Order to display"
+msgstr ""
+
+#: lib/Sitemap/Api/Admin.php:25 templates/sitemap_admin_settings.tpl:6
+msgid "Settings"
+msgstr ""
+
+#: lib/Sitemap/Api/Admin.php:369
+msgid "Error: the modules per line value should be set between 1 and 10."
+msgstr ""
+
+#: lib/Sitemap/Controller/User.php:93
+msgid "And more..."
+msgstr ""
+
+#: lib/Sitemap/Controller/Admin.php:181 lib/Sitemap/Controller/Admin.php:207
+#: lib/Sitemap/Controller/Admin.php:233
+msgid "Done! Module configuration updated."
+msgstr ""
+
+#: includes/pages.php:31 includes/content.php:31 includes/postcalendar.php:27
+#: includes/addressbook.php:31 includes/news.php:45 includes/weblinks.php:29
+#: includes/advancedpolls.php:50 includes/downloads.php:29
+#: includes/downloads.php:60 includes/tag.php:32 includes/clip.php:65
+msgid "Error in plugin"
+msgstr ""
+
+#: includes/legal.php:8
+msgid "Legal notice"
+msgstr ""
+
+#: includes/legal.php:11
+msgid "Terms of use"
+msgstr ""
+
+#: includes/legal.php:14
+msgid "Privacy policy"
+msgstr ""
+
+#: includes/legal.php:17
+msgid "Trade conditions"
+msgstr ""
+
+#: includes/legal.php:20
+msgid "Cancellation right"
+msgstr ""
+
+#: includes/legal.php:23
+msgid "Accessibility statement"
+msgstr ""
+
+#: includes/news.php:66 includes/downloads.php:67
+msgid "Categories"
+msgstr ""
+
+#: includes/news.php:67
+msgid "Archives"
+msgstr ""
+
+#: includes/news.php:69
+msgid "Submit article"
+msgstr ""
+
+#: includes/faq.php:38
+msgid "Submit a question"
+msgstr ""
+
+#: includes/search.php:7
+msgid "New search"
+msgstr ""
+
+#: includes/search.php:9
+msgid "Recent searches list"
+msgstr ""
+
+#: includes/reviews.php:40
+msgid "Submit a review"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:9
+msgid ""
+"By default Sitemap override cache settings then the cache is forced to be "
+"enable. Why? Because this module makes a lot of sql queries to generate the "
+"sitemap, so for better performance the result is cached during 24 hours by "
+"default."
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:14
+msgid "Cache"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:16
+msgid "Override site cache settings"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:19
+#: templates/sitemap_admin_contentdisplay.tpl:19
+#: templates/sitemap_admin_contentdisplay.tpl:58
+msgid "Yes"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:21
+#: templates/sitemap_admin_contentdisplay.tpl:21
+#: templates/sitemap_admin_contentdisplay.tpl:60
+msgid "No"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:26
+msgid "Lifetime for cached pages"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:28
+msgid ""
+"In seconds (e.g. 3600 = 1 hour, 86400 = 24 hours, 604800 = 1 week, 2678400 = "
+"1 month)."
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:33
+msgid "Layout"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:35
+msgid "Select your favorite layout"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:38
+msgid "Default"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:40
+msgid "SlickMap (graphical representation)"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:45
+msgid "Maximum modules per line"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:47
+msgid "This value must be between 1 and 10 (default = 5)."
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:53
+#: templates/sitemap_admin_contentorder.tpl:47
+#: templates/sitemap_admin_contentdisplay.tpl:109
+msgid "Update"
+msgstr ""
+
+#: templates/sitemap_admin_settings.tpl:54
+#: templates/sitemap_admin_contentorder.tpl:48
+#: templates/sitemap_admin_contentdisplay.tpl:110
+msgid "Cancel"
+msgstr ""
+
+#: templates/sitemap_admin_view.tpl:4
+msgid "Sitemap overview"
+msgstr ""
+
+#: templates/sitemap_admin_view.tpl:7
+msgid "Welcome into the administration of the sitemap module."
+msgstr ""
+
+#: templates/sitemap_admin_view.tpl:11
+msgid "Links to your xml sitemap"
+msgstr ""
+
+#: templates/sitemap_admin_view.tpl:19
+msgid "Links to your xml sitemap per module"
+msgstr ""
+
+#: templates/sitemap_admin_view.tpl:30
+msgid "Submit xml sitemap"
+msgstr ""
+
+#: templates/sitemap_admin_view.tpl:31
+msgid ""
+"If you click on the bottom links, it will submit the xml sitemap in the "
+"corresponding language to the search engine."
+msgstr ""
+
+#: templates/sitemap_user_view.tpl:1
+#: templates/sitemap_user_view_slickmap.tpl:1
+msgid "Sitemap"
+msgstr ""
+
+#: templates/sitemap_user_view.tpl:2
+#: templates/sitemap_user_view_slickmap.tpl:2
+#, php-format
+msgid "Sitemap of %s"
+msgstr ""
+
+#: templates/sitemap_user_view.tpl:13
+#: templates/sitemap_user_view_slickmap.tpl:18
+msgid "Homepage"
+msgstr ""
+
+#: templates/sitemap_user_view.tpl:15
+#: templates/sitemap_user_view_slickmap.tpl:12
+msgid "Register"
+msgstr ""
+
+#: templates/sitemap_user_view.tpl:16
+#: templates/sitemap_user_view_slickmap.tpl:13
+msgid "Log In"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:6
+msgid "Order to display the content"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:10
+msgid "Notice:"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:12
+msgid ""
+"You can't order a module before to have attribute it to the left/right "
+"column."
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:14
+msgid "Blank field for order will automaticly set order to 99."
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:19
+msgid "Order per module"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:21
+msgid "Column and order per module"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:29
+msgid "Left"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:31
+msgid "Right"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:33
+msgid "Alternatively"
+msgstr ""
+
+#: templates/sitemap_admin_contentorder.tpl:34
+#: templates/sitemap_admin_contentorder.tpl:38
+msgid "Order:"
+msgstr ""
+
+#: templates/sitemap_user_view_slickmap.tpl:46
+msgid "Direct links"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:9
+msgid ""
+"Notice: You have to set for each module if you want to display it into the "
+"sitemap and if you want to display links to the sections/content of each "
+"module. You can also set some xml information."
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:16
+msgid "Display this module"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:27
+msgid "Sitemap name"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:33
+msgid "Display links to the sections"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:41
+msgid "Display links to the content"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:45
+msgid "Maximum links to content for user map"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:47
+msgid "Blank = no limit."
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:53
+msgid "Xml sitemap"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:55
+msgid "Display in XML map"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:65
+msgid "Maximum links to content for XML map"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:67
+msgid "(Blank = no limit)."
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:70
+msgid "Set change frequency for this module"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:72
+msgid "Don't specify change frequency"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:73
+msgid "Always"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:74
+msgid "Hourly"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:75
+msgid "Daily"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:76
+msgid "Weekly"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:77
+msgid "Monthly"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:78
+msgid "Yearly"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:79
+msgid "Never"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:83
+msgid "Set priority for this module"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:85
+msgid "Don't specify priority"
+msgstr ""
+
+#: templates/sitemap_admin_contentdisplay.tpl:104
+msgid "Go to bottom"
+msgstr ""

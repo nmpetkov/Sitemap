@@ -1,0 +1,51 @@
+div.sitemap_view h1 {
+    padding: 0;
+    margin: 0;
+    margin-left: 0.5em;
+}
+
+div.sitemap_view #sm_left {
+    float: left;
+    width: 49%;
+}
+
+div.sitemap_view #sm_right {
+    float: right;
+    width: 49%;
+}
+
+div.sitemap_view .sm_item {
+    border-bottom: 1px dashed #000;
+    padding: 10px;
+}
+
+div.sitemap_view .sm_item h4 {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 7px;
+}
+
+div.sitemap_view .sm_item ul{
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+}
+
+div.sitemap_view #sm_left .sm_item {
+    margin-right: 20px;
+}
+div.sitemap_view #sm_right .sm_item {
+    margin-left: 20px;
+}
+
+div.sitemap_view .sm_urlext li {
+    list-style-image: url("../../../images/icons/extrasmall/next.gif");
+    margin-left: 28px;
+    line-height: 1.5em;
+}
+
+div.sitemap_view .sm_contentext li {
+    list-style-image: url("../../../images/icons/extrasmall/folder_sent_mail.gif");
+    margin-left: 28px;
+    line-height: 1.5em;
+}

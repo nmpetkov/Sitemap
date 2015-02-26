@@ -1,0 +1,38 @@
+Changelog for the Sitemap module
+--------------------------------
+
+Sitemap 2.0.0
+- Refactored to Zikula 1.3 standards.
+- Changed and tested to work in Zikula 1.4, but also in 1.3.
+- Updated links to send sitemaps to Google and Bing.
+- Removed Ask and MoreOver search engines as not actual.
+- Made filter for language.
+- Setting for limiting displayed items (helps to limit queries to optimize performance).
+- In plugins select only needed columns to optimize performance.
+- Refactored plugins to function with current versions of modules
+- Add setting for max items for XML map for each module.
+- Update and improve cache handling (add language dependence).
+- Multilingual module names for the sitemap.
+- Added more plugins for modules: AddressBook, Weblinks, Downloads, 
+    PostCalendar, Tag, AdvancedPolls (version > 3.0.0)
+- Improved plugins: News, Pages, Faq, Content, Wikula, 
+    Legal, Groups, Search, Reviews (version 2.4.1)
+- Dizkus is not tested (There is no release for Zikula 1.3)
+
+Sitemap 1.2
+------------
+- Improve admin templates.
+- Improve pninit.
+- Improve smarty code of user templates.
+- Improve SlickMap layout if total mod is smaller than max mod per line.
+- Add register and login links to the user sitemap.
+- Enable xml sitemap per module. Fix #18.
+- Fix variables not set with cached page. Fix #2.
+- Clear the cache after every modification of the Sitemap settings.
+- Fix baseurl in xml sitemap with shorturl based on directory. Fix #21.
+
+
+Sitemap 0.1 to 0.9
+------------------
+pre-release build
+
