@@ -6,7 +6,9 @@
     },
     "version": {
         "keywords": [
-            "sitemap"
+            "zikula",
+            "sitemap",
+            "seo"
         ],
         "semver": "2.0.0",
         "dependencies": {
