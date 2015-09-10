@@ -11,9 +11,15 @@ class Sitemap_Installer extends Zikula_AbstractInstaller
     {
         // Set default modules vars
         $sm_mods           = array();
-        $sm_mods['Groups'] = array('displaymod' => 1, 'contentext' => 1);
-        $sm_mods['legal']  = array('displaymod' => 1, 'urlext' => 1);
-        $sm_mods['Search'] = array('displaymod' => 1, 'urlext' => 1);
+        if (Zikula_Core::VERSION_NUM < '1.4.0') {
+            $sm_mods['Groups'] = array('displaymod' => 1, 'contentext' => 1);
+            $sm_mods['Legal']  = array('displaymod' => 1, 'urlext' => 1);
+            $sm_mods['Search'] = array('displaymod' => 1, 'urlext' => 1);
+        } else {
+            $sm_mods['ZikulaGroupsModule'] = array('displaymod' => 1, 'contentext' => 1);
+            $sm_mods['ZikulaLegalModule']  = array('displaymod' => 1, 'urlext' => 1);
+            $sm_mods['ZikulaSearchModule'] = array('displaymod' => 1, 'urlext' => 1);
+        }
         ModUtil::setVar('Sitemap', 'sm_mods', $sm_mods);
 
         // Set default config: cachest = Cache state, cachelt = Cache lifetime, layout = Layout to use, layout_mpl = Modules per line for layout

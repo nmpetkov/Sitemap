@@ -52,7 +52,7 @@ class Sitemap_Api_Admin extends Zikula_AbstractApi
         // Hide some system modules
         foreach ($core_mods as $coremod)
         {
-            if (!preg_match('#^(?:Blocks|Categories|Errors|Gettext|Profile|Scribite|Sitemap|Theme|Thumbnail|Tour|Users|Banners|Ephemerides|FConnect|Quotes|Avatar)$#', $coremod['name'])) {
+            if (!preg_match('#^(?:Blocks|ZikulaBlocksModule|Categories|ZikulaCategoriesModule|Errors|Gettext|Profile|ZikulaProfileModule|Scribite|Sitemap|Theme|ZikulaThemeModule|Thumbnail|Tour|Users|ZikulaUsersModule|Banners|Ephemerides|FConnect|Quotes|Avatar)$#', $coremod['name'])) {
                 $core_mods_cl[] = $coremod;
             }
         }
@@ -86,7 +86,7 @@ class Sitemap_Api_Admin extends Zikula_AbstractApi
                         } // end langs
                         if (isset($sm_mods[$modname]['displaymodxml']) && $sm_mods[$modname]['displaymodxml']) {
                             $displaymodxml = 1;
-                        } 
+                        }
                         if (isset($sm_mods[$modname]['urlext']) && $sm_mods[$modname]['urlext']) {
                             $urlext = $sm_mods[$modname]['urlext'];
                         }
@@ -124,15 +124,15 @@ class Sitemap_Api_Admin extends Zikula_AbstractApi
                 $return_mods[$modname] = array('displaymod'  => $displaymod,
                                                'displaymodxml' => $displaymodxml,
                                                'displayname' => $coremod['displayname'],
-                                               'sitemapname' => $sm_mods[$modname]['sitemapname'],
+                                               'sitemapname' => isset($sm_mods[$modname]['sitemapname']) ? $sm_mods[$modname]['sitemapname'] : $coremod['displayname'],
                                                'urlext'      => $urlext,
                                                'contentext'  => $contentext,
                                                'contextmax'  => $contextmax,
                                                'contextmaxxml' => $contextmaxxml,
                                                'changefreq'  => $changefreq,
                                                'priority'    => $priority,
-                                               'column'      => $sm_mods[$modname]['column'],
-                                               'order'       => $sm_mods[$modname]['order']);
+                                               'column'      => isset($sm_mods[$modname]['column']) ? $sm_mods[$modname]['column'] : 1,
+                                               'order'       => isset($sm_mods[$modname]['order']) ? $sm_mods[$modname]['order'] : 0);
             }
 
             //// Content for order
@@ -143,9 +143,9 @@ class Sitemap_Api_Admin extends Zikula_AbstractApi
 
                 // Get content from modvar
                 if (array_key_exists($modname, $sm_mods)) {
-                        $displaymod = true;
-                        $order      = $sm_mods[$modname]['order'];
-                        $column     = $sm_mods[$modname]['column'];
+                    $displaymod = true;
+                    $order      = isset($sm_mods[$modname]['order']) ? $sm_mods[$modname]['order'] : 0;
+                    $column     = isset($sm_mods[$modname]['column']) ? $sm_mods[$modname]['column'] : 1;
                 }
 
                 if ($displaymod) {

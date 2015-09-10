@@ -58,18 +58,18 @@ class Sitemap_Api_User extends Zikula_AbstractApi
                     }
                 }
 
+                // Multilingual names
+                $lang = ZLanguage::getLanguageCode();
+                $sitemap_name = $mod['displayname'];
+                if (isset($sm_mods[$modname]['sitemapname'][$lang]) && !empty($sm_mods[$modname]['sitemapname'][$lang])) {
+                    $sitemap_name = $sm_mods[$modname]['sitemapname'][$lang];
+                }
+
                 //// Default content
                 if ($gettype == 'default') {
                     // Set the order number for modules which don't already have a one
                     if (empty($sm_mods[$modname]['order']) || (empty($sm_mods[$modname]['column']) && $sm_conf['layout'] != 2)) {
                         $sm_mods[$modname]['order'] = 99;
-                    }
-
-                    // Multilingual names
-                    $lang = ZLanguage::getLanguageCode();
-                    $sitemap_name = $mod['displayname'];
-                    if (isset($sm_mods[$modname]['sitemapname'][$lang]) && !empty($sm_mods[$modname]['sitemapname'][$lang])) {
-                        $sitemap_name = $sm_mods[$modname]['sitemapname'][$lang];
                     }
 
                     // Save module informations
@@ -91,8 +91,8 @@ class Sitemap_Api_User extends Zikula_AbstractApi
                                                 'urlext'     => $modurlext,
                                                 'contentext' => $modcontentext,
                                                 'displaymodxml' => isset($sm_mods[$modname]['displaymodxml']) ? $sm_mods[$modname]['displaymodxml'] : 0,
-                                                'changefreq' => $sm_mods[$modname]['changefreq'],
-                                                'priority'   => $sm_mods[$modname]['priority']);
+                                                'changefreq' => isset($sm_mods[$modname]['changefreq']) ? $sm_mods[$modname]['changefreq'] : '',
+                                                'priority'   => isset($sm_mods[$modname]['priority']) ? $sm_mods[$modname]['priority'] : '');
                 }
             }
         }

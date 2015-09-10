@@ -9,7 +9,7 @@
 {foreach item='curitem' from=$smitems}
     <url>
         <loc>{$curitem.url}</loc>
-        {if $curitem.lastmod}
+        {if isset($curitem.lastmod) && $curitem.lastmod}
         <lastmod>{$curitem.lastmod}</lastmod>
         {/if}
         {if $curitem.changefreq}

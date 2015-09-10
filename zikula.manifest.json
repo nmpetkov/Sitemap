@@ -10,7 +10,7 @@
             "sitemap",
             "seo"
         ],
-        "semver": "2.0.0",
+        "semver": "2.0.1",
         "dependencies": {
             "zikula/core": ">1.3.0 <1.5"
         },
