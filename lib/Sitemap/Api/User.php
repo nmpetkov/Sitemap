@@ -118,8 +118,10 @@ class Sitemap_Api_User extends Zikula_AbstractApi
         return $retb_mods;
     }
 
-    public function getlinks()
+    public function getLinks()
     {
+        $links = array();
+
         if (SecurityUtil::checkPermission('Sitemap::', '::', ACCESS_ADMIN)) {
             $links[] = array('url'   => ModUtil::url('Sitemap', 'admin', 'main'),
                      'text'  => $this->__('Backend'),
